@@ -13,6 +13,18 @@ export const StatsExampleContent = () => (
   </Example>
 )
 
+export const StatsExampleContentValue = () => (
+  <Example width="200px">
+    <Stats value={2170} />
+  </Example>
+)
+
+export const StatsExampleContentIcon = () => (
+  <Example width="180px">
+    <Stats {...exampleData} iconTitle={IconLightningBolt} />
+  </Example>
+)
+
 export const StatsExampleContentLong = () => (
   <Example width="180px">
     <Stats
