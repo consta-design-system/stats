@@ -1,5 +1,7 @@
 import {
   StatsExampleContent,
+  StatsExampleContentValue,
+  StatsExampleContentIcon,
   StatsExampleContentOther,
   StatsExampleContentLong,
   StatsExamplePlaceholder
@@ -40,19 +42,17 @@ import {
   - [Значение по умолчанию](#значение-по-умолчанию)
   - [Заголовок](#заголовок)
   - [Единицы](#единицы)
-  - [Число](#показатель-изменений)
+  - [Показатель изменений](#показатель-изменений)
   - [Длинные строчки](#длинные-строчки)
 - [Статус](#статус)
-- [Расположение-элементов](#расположение-элементов)
+- [Расположение элементов](#расположение-элементов)
 - [Размер](#размер)
 - [Список свойств](#свойства)
 - [Пример использования](#пример)
 
 ## Содержимое
 
-
-
-<StatsExampleContent />
+Главный компонент этого элемента — число. К числу можно добавить [заголовок](#заголовок), [единицы измерения](#единицы-измерения), [иконку](#иконка) и [показать, как оно изменилось](#показатель-изменений).
 
 ```tsx
 <Stats
@@ -61,22 +61,33 @@ import {
   iconTitle={<svg />}
   unit="разрядов"
   rate="20%"
-  iconArrowRate
   status="success"
   layout="default"
   size="s"
 />
 ```
 
+<StatsExampleContent />
+
 ### Число
 
 Главный элемент этого компонента — число, которое нужно выделить. Укажите его в свойстве `value`.
+
+```tsx
+<Stats value={2170} />
+```
+
+<StatsExampleContentValue />
 
 
 ### Значение по умолчанию
 
 Если число не задано (`value=null`), показывается значение по умолчанию. Его можно добавить в свойстве `placeholder`.
 Здесь может быть что угодно: число, слово или специальный символ. Если ничего не укажете, поставим прочерк `—`.
+
+```tsx
+<Stats value={null} title="В этом году я видел" unit="молний" />
+```
 
 <StatsExamplePlaceholder />
 
@@ -85,6 +96,12 @@ import {
 Это надпись над числом, задается в свойстве `title`.
 
 Рядом с заголовком можно показать иконку, укажите ее в свойстве `iconTitle`.
+
+```tsx
+<Stats value={2170} title="Скорость молнии" unit="км/с" iconTitle={IconLightningBolt} />
+```
+
+<StatsExampleContentIcon />
 
 ### Единицы
 
@@ -122,9 +139,19 @@ import {
 
 Если родительский контейнер ограничен по ширине, длинные строки переносятся.
 
+```tsx
+<Stats
+  value={2170}
+  title="В этом году молнии били в землю с ужасающей скоростью"
+  iconTitle={IconLightningBolt}
+  rate="20%"
+  status="success"
+  size="xs"
+  unit="км/с"
+/>
+```
+
 <StatsExampleContentLong />
-
-
 
 ## Статус
 
@@ -133,7 +160,7 @@ import {
 За статус отвечает свойство `'status'`. Варианты: `'success'`, `'warning'`, `'error'`, `'system'`, по умолчанию — `'system'`.
 
 
-| `'success'`                 | `'warning'`                 | `'error'`                 | `'system'`                 |
+| `status="success"`                 | `status="warning"`                 | `status="error"`                 | `status="system"`                 |
 | ----------------------- | ----------------------- | --------------------- | ---------------------- |
 | <StatsExampleSuccess /> | <StatsExampleWarning /> | <StatsExampleError /> | <StatsExampleSystem /> |
 
@@ -145,7 +172,7 @@ import {
 
 Вы можете поменять их местами (`layout="reversed"`).
 
-| `default`                       | `reversed`                       |
+| `layout="default"`                       | `layout="reversed"`                       |
 | ----------------------------- | ------------------------------ |
 | <StatsExampleLayoutDefault /> | <StatsExampleLayoutReversed /> |
 
@@ -153,23 +180,23 @@ import {
 
 За размер компонента отвечает свойство `size`. Варианты: `'2xs'`, `'xs'`, `'s'`, `'m`', `'l'`.
 
-**2xs**
+##### size="2xs"
 
 <StatsExampleSize2XS />
 
-**xs**
+##### size="xs"
 
 <StatsExampleSizeXS />
 
-**s**
+##### size="s"
 
 <StatsExampleSizeS />
 
-**m**
+##### size="m"
 
 <StatsExampleSizeM />
 
-**l**
+##### size="l"
 
 <StatsExampleSizeL />
 
@@ -178,7 +205,7 @@ import {
 | Свойство                           | Тип                                       | По умолчанию                            | Описание                                                                                             |
 | ---------------------------------- | ----------------------------------------- | --------------------------------------- | ---------------------------------------------------------------------------------------------------- |
 | [`value`](#число)       | `number` \| `null`                        | -                                       | Число, которое нужно показать                                                                        |
-| [`placeholder`](#значение-по-умолчанию)                      | `string`                                  | `'—'`                                   | Значение, которое отображается вместо числа, если число не указано (в `value` передан `null`)                                      |
+| [`placeholder?`](#значение-по-умолчанию)                      | `string`                                  | `'—'`                                   | Значение, которое отображается вместо числа, если число не указано (в `value` передан `null`)                                      |
 | [`title?`](#заголовок)      | `string`                                  | -                                       | Надпись над числом, заголовок — поясняет, что это                                                    |
 | [`iconTitle?`](#заголовок)                       | `ReactNode`                               | -                                       | Иконка рядом с заголовком, отображается всегда у первой строки                                       |
 | [`unit?`](#единицы)       | `string`                                  | -                                       | Поясняет, в каких единицах измеряется число, меняет положение в зависимости от `layout`              |
@@ -194,7 +221,7 @@ import {
 
 ```tsx
 import React from 'react'
-import { Stats } from '@consta/widgets/Stats'
+import { Stats } from '@consta/Stats'
 
 const SomeComponent = () => (
   <Stats
