@@ -1,6 +1,6 @@
-# [Дизайн-система Consta](http://consta.gazprom-neft.ru/) | Stats
+# [Дизайн-система Consta](http://consta.design/) | Stats
 
-Компонен Stats, входит в [дизайн-систему Consta](https://github.com/gazprom-neft/consta-uikit). Подходит, чтобы красиво показывать числа для статистики.
+Компонен Stats, входит в [дизайн-систему Consta](https://github.com/consta-design-system/consta-uikit). Подходит, чтобы красиво показывать числа для статистики.
 
 # Как использовать
 
@@ -16,7 +16,7 @@ $ yarn add @consta/stats
 
 ## Подключите зависимости
 
-Чтобы начать работу, установите библиотеку [`@consta/uikit`](https://www.npmjs.com/package/@consta/uikit) и [настройте тему](http://uikit.gizeasy.ru/?path=/docs/components-theme--playground).
+Чтобы начать работу, установите библиотеку [`@consta/uikit`](https://www.npmjs.com/package/@consta/uikit) и [настройте тему](http://uikit.consta.design/?path=/docs/components-theme--playground).
 
 ### Можно использовать компоненты
 
@@ -74,12 +74,12 @@ $ yarn test
 
 ## Документация
 
-[Посмотреть документацию и примеры](http://stats.gizeasy.ru/)
+[Посмотреть документацию и примеры](http://stats.consta.design/)
 
 ## Контрибьюторам
 
-Будем рады, если вы захотите принять участие в разработке дизайн-системы =) Но сначала прочитайте [инструкцию для контрибьюторов](http://uikit.gizeasy.ru/?path=/docs/common-develop-contributors--page).
+Будем рады, если вы захотите принять участие в разработке дизайн-системы =) Но сначала прочитайте [инструкцию для контрибьюторов](http://uikit.consta.design/?path=/docs/common-develop-contributors--page).
 
 ## Лицензия
 
-Дизайн-систему можно использовать бесплатно, она распространяется ПАО «Газпром нефть» на условиях открытой [лицензии MIT](https://consta.gazprom-neft.ru/static/licence_mit.pdf).
+Дизайн-систему можно использовать бесплатно, она распространяется ПАО «Газпром нефть» на условиях открытой [лицензии MIT](https://consta.design/static/licence_mit.pdf).
