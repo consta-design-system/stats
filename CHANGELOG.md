@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.0.3 (28/04/2022)
+- [docs(global): remove gpn (#10)](https://github.com/consta-design-system/stats/commit/805159c4629e4bbc3784c7ded3239a616c4583f3) - [@arhayka](https://github.com/arhayka)
+- [fix(numberFormatter): fixed regex (#11)](https://github.com/consta-design-system/stats/commit/f56b36d04294b02905b1d1b6d9addc3ec6ed34f6) - [@gizeasy](https://github.com/gizeasy)
+- [chore(deploy): update config](https://github.com/consta-design-system/stats/commit/bd8abdaefecb2e7a1bb51243362e7e66d8632489) - [@gizeasy](https://github.com/gizeasy)
+
+--------------------
+
 ## v1.0.2 (19/04/2022)
 - [docs(global): replace url (#9)](https://github.com/consta-design-system/stats/commit/7a07e0366a23b42897ff825ca8250801ce117a9b) - [@arhayka](https://github.com/arhayka)
 - [docs(global): replace links (#8)](https://github.com/consta-design-system/stats/commit/42899df2c65520e83c17a71551b737e4bf8f171f) - [@gizeasy](https://github.com/gizeasy)
