@@ -10,11 +10,11 @@ const groups = [
 ] as const;
 
 export const { createStand } = createConfig({
-  title: 'Consta stats',
+  title: 'Consta Stats',
   id: 'stats',
   groups,
   group: 'Библиотеки компонентов',
   image,
   description:
-    '[тут описание что это такое] Ультра топчик библиотеки с пацанскими кнопками и графиками, качай.',
+    'Библиотека для отображения чисел на графиках или в инфографике.',
 });
