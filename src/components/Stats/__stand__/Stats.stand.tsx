@@ -7,5 +7,6 @@ export default createStand({
   description:
     'Этот компонент нужен, чтобы показывать важные числа — на графиках, схемах, картах или сами по себе',
   version: '1.0.3',
+  sandbox: 'stats-gkbtlc',
   status: 'stable',
 });
