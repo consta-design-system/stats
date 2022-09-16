@@ -1,11 +1,14 @@
 import { createStand } from '##/stand/standConfig';
 
+import image from './Stats.image.svg';
+
 export default createStand({
   title: 'Stats',
   id: 'Stats',
+  image,
   group: 'components',
   description:
-    'Этот компонент нужен, чтобы показывать важные числа — на графиках, схемах, картах или сами по себе',
+    'Компонент для отображения чисел, с заголовком, единицами измерения, иконками и другими настройками.',
   version: '1.0.3',
   sandbox: 'stats-gkbtlc',
   status: 'stable',
