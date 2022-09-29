@@ -1,6 +1,6 @@
 {
   "name": "@consta/stats",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "scripts": {
     "postinstall": "husky install",
     "tsc-dry-run": "tsc --noEmit",
