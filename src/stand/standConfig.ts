@@ -2,17 +2,16 @@ import { createConfig } from '@consta/stand';
 
 import image from './ConstaImage.png';
 
-const groups = [
-  {
-    title: 'Компоненты',
-    id: 'components',
-  },
-] as const;
-
 export const { createStand } = createConfig({
   title: 'Consta Stats',
   id: 'stats',
-  groups,
+  groups: [
+    {
+      title: 'Компоненты',
+      id: 'components',
+      view: 'card',
+    },
+  ],
   group: 'Библиотеки компонентов',
   image,
   description:
