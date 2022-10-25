@@ -1,0 +1,30 @@
+## Установите пакет и зависимости
+
+`yarn add @consta/uikit @consta/stats`
+
+или
+
+`npm install @consta/uikit @consta/stats`
+
+## Подключите тему
+
+Тему обязательно нужно подключать в корне приложения, так, чтобы все компоненты были вложены в [компонент `Theme`](##LIBS.LIB.STAND/lib:uikit/stand:components-theme-stable).
+
+## Добавьте компонент
+
+Например, так:
+
+```js
+import { Theme, presetGpnDefault } from '@consta/uikit/Theme';
+import { Stats } from '@consta/Stats';
+const SomeComponent = () => (
+  <Stats
+    value={2170}
+    title="Молний за год"
+    unit="разрядов"
+    rate="20%"
+    iconArrowRate
+    status="success"
+  />
+);
+```
