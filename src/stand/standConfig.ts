@@ -7,9 +7,15 @@ export const { createStand } = createConfig({
   id: 'stats',
   groups: [
     {
+      title: 'Документы',
+      id: 'docs',
+      initialOpen: true,
+    },
+    {
       title: 'Компоненты',
       id: 'components',
       view: 'card',
+      initialOpen: true,
     },
   ],
   group: 'Библиотеки компонентов',
