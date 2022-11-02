@@ -18,8 +18,9 @@ export const { createStand } = createConfig({
       initialOpen: true,
     },
   ],
-  group: 'Библиотеки компонентов',
+  group: 'Отдельные компоненты',
   image,
   description:
     'Библиотека для отображения чисел на графиках или в инфографике.',
+  repositoryUrl: 'https://github.com/consta-design-system/stats',
 });
