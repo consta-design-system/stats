@@ -7,6 +7,7 @@ export default createStand({
   description:
     'Компонент для отображения чисел, с заголовком, единицами измерения, иконками и другими настройками.',
   version: '1.0.3',
+  alias: ['аналитика', 'статистика', 'analytic', 'statistic', 'показатель'],
   sandbox: 'stats-gkbtlc',
   status: 'stable',
 });
