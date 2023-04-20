@@ -18,7 +18,7 @@ export const { createStand } = createConfig({
       initialOpen: true,
     },
   ],
-  group: 'Отдельные компоненты',
+  group: 'Специальные компоненты',
   image,
   description:
     'Библиотека для отображения чисел на графиках или в инфографике.',
