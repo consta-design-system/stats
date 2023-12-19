@@ -1,5 +1,18 @@
 # Changelog
 
+## v2.0.0 (19/12/2023)
+Самое важное:
+- Добавлена поддержка `@consta/uikit` `v5.0.0`
+
+---
+
+- [chore: update uikit version (#26)](https://github.com/consta-design-system/stats/commit/9b646649124a9cef576a785bed55eda55c8f0506) - [@gizeasy](https://github.com/gizeasy)
+- [chore(utils): added status classNames (#25)](https://github.com/consta-design-system/stats/commit/e40ffeac6c3aeed82cacf33cd1ddea74eac8da6c) - [@N1MBER](https://github.com/N1MBER)
+- [chore: edit deploy config and codeowners (#24)](https://github.com/consta-design-system/stats/commit/aa9a3824e3ba5d410c835fa1a84d13dc74951c47) - [@gizeasy](https://github.com/gizeasy)
+- [docs(standConfig): add figmaUrl (#23)](https://github.com/consta-design-system/stats/commit/8d7d26e6ca4c55455b988cfd153f102a79a635f1) - [@gizeasy](https://github.com/gizeasy)
+
+--------------------
+
 ## v1.1.1 (23/05/2023)
 Запускать локальный сервер разработки и сборку пакетов теперь можно и на ОС Windows.
 
